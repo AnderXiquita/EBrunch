@@ -1,0 +1,11 @@
+.dish4 {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.dish4 p {
+    text-align: right;
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: antiquewhite;
+}

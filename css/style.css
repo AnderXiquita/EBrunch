@@ -1,0 +1,417 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --font-montserrat: 'Montserrat', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body,
+html {
+    font-family: var(--font-montserrat);
+    background-color: #000;
+    color: antiquewhite;
+    scroll-behavior: smooth;
+}
+
+h1 { font-size: 3.7rem; }
+h2 { font-size: 3.2rem; }
+h3 { font-size: 2.8rem; }
+h4 { font-size: 2.4rem; }
+h5 { font-size: 2rem; }
+h6 { font-size: 1.6rem; }
+
+p { 
+    font-size: 1.6rem;
+    margin: 10px 0;
+    line-height: 1.7rem; 
+}
+
+a {
+    text-decoration: none;
+    color: antiquewhite;
+}
+
+.current {
+    border-bottom: 1px solid antiquewhite;
+}
+
+
+/*--------------------------------*/
+
+.container {    
+    margin: auto;
+    height: auto;
+    max-width: 1300px;
+    overflow: auto;
+    padding: 0px 20px;
+}
+
+.btn {
+    display: inline-block;
+    font-size: 15px;
+    padding: 12px 14px;
+    cursor: pointer;
+    font-weight: 400;
+    letter-spacing: 1px;
+    border-radius: 30px;
+    border: 1px solid transparent;
+}
+
+.btn-small {
+    padding: 10px 30px;
+    border-radius: 10px;
+}
+
+.btn-dark {
+    background-color: #000;
+    color: antiquewhite;
+    cursor: pointer;   
+    transition: all 0.4s;
+}
+
+.btn-dark:hover{
+    background-color: transparent;
+    border-color: black;
+    cursor: pointer;   
+    color: black;
+}
+
+.btn-light {
+    background-color: antiquewhite;
+    cursor: pointer;   
+    color: #000;
+    transition: all 0.5s;
+}
+
+.btn-light:hover{
+    background-color: transparent;
+    border-color: antiquewhite;
+    cursor: pointer;   
+    color: antiquewhite;
+}
+
+/* Navbar */
+
+
+#header-main {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.navbar {
+    padding: 20px 0;
+}
+
+.container-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container-nav h1 {
+    font-weight: 300;
+}
+
+.container-nav ul {
+    margin-left: 25px;
+    width: 300px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-nav ul a {
+    font-size: 1.3rem;
+    padding-bottom: 3px;
+}
+
+.container-nav ul a:hover {
+    border-bottom: 1px solid antiquewhite;
+}
+
+/* Showcase */
+
+#showcase {
+    flex-grow: 1;
+    background-image: url(https://silly-goodall-01093d.netlify.app/img/showcase.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-showcase {
+    width: max-content;
+    text-align: center;
+}
+
+.container-showcase p {
+    color: #fff;
+    font-size: 2.1rem;
+}
+
+.container-showcase h1 {
+    color: #fff;
+    font-size: 5rem;
+    font-weight: 300;
+    margin: 15px 0;
+}
+
+/* Features */
+
+#features {
+    padding: 50px 0;
+    background-color: #000;
+}
+
+#features .container-features {
+    display: grid;
+    place-content: center;
+    gap: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 32%));
+    grid-auto-rows: auto;
+}
+
+.dish {
+    height: 300px;  
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.dish1 {
+    background-image: url(https://silly-goodall-01093d.netlify.app/img/food-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.dish2 {
+    
+
+    background-image: url(https://silly-goodall-01093d.netlify.app/img/food-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.dish3 {
+    
+
+    background-image: url(https://silly-goodall-01093d.netlify.app/img/food-3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.dish4 {
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+
+    background-image: url(https://silly-goodall-01093d.netlify.app/img/food-banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.dish4 {
+    flex-direction: column;
+}
+
+.dish4 p {
+    font-size: 3.5rem;
+    font-weight: 400;
+}
+
+.dish5 {
+
+    background-image: url(https://silly-goodall-01093d.netlify.app/img/food-5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* Footer */
+
+footer {
+    border-top: 1px solid antiquewhite;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+footer a {
+    padding-bottom: 3px;
+}
+
+footer a:hover {
+    border-bottom: 1px solid antiquewhite;
+}
+
+
+
+
+
+/*----------------------------------------------*/
+/* Food */
+
+
+
+
+.header-food {
+    height: auto !important;
+}
+
+#food {
+    padding-top: 40px;
+    padding-bottom: 5px;
+}
+
+.container-food {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.food-description {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+
+.food-description h2 {
+    font-weight: 200;
+}
+
+.food-description p {
+    text-align: justify;
+    font-size: 1.3rem;
+}
+
+.food-img {
+    padding: 30px;
+    min-width: 264px;
+    width: 40%;
+}
+
+.food-img img {
+    width: 100%;
+}
+
+.btn-light-food {
+    display: block;
+    width: max-content;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    padding: 10px 30px;
+}
+
+
+/*------------------------------------------*/
+/* About */
+
+.container-about {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    align-items: center;
+}
+
+.about h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-weight: 300;
+}
+
+/* Contact */
+
+.contact {
+    padding: 50px 0;
+}
+
+.contact h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-weight: 300;
+}
+
+.form{
+    width: 290px;
+    min-width: 289px;
+    height:440px;
+    background:#e6e6e6;
+    border-radius:8px;
+    box-shadow:0 0 40px -10px #000;
+    margin: 40px auto;
+    padding:20px 30px;
+    max-width: calc(100vw - 40px);
+    box-sizing:border-box;
+    font-family:'Montserrat',sans-serif;
+    position:relative
+}
+
+.form h2{
+    margin:10px 0;
+    padding-bottom:10px;
+    width:180px;
+    color:#78788c;
+    border-bottom:3px solid #78788c
+}
+
+input{
+    width:100%;
+    padding:10px;
+    box-sizing:border-box;
+    background:none;
+    outline:none;
+    resize:none;
+    border:0;
+    font-family:'Montserrat',sans-serif;
+    transition:all .3s;
+    border-bottom:2px solid #bebed2
+}
+
+input:focus{
+    border-bottom:2px solid #78788c
+}
+
+.form p:before{
+    content:attr(type);
+    display:block;margin:28px 0 0;
+    font-size:14px;
+    color:#5a5a5a
+}
+
+button{
+    float:right;
+    padding:8px 12px;
+    margin:8px 0 0;
+    font-family:'Montserrat',sans-serif;
+    border:2px solid #78788c;
+    background:0;
+    color:#5a5a6e;
+    cursor:pointer;
+    transition:all .3s
+}
+
+button:hover{
+    background:#78788c;color:#fff
+}

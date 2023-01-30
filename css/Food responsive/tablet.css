@@ -1,0 +1,13 @@
+.container-food, .container-about {
+    justify-content: center;
+}
+
+.food-description {
+    width: 100%;
+    padding: 20px;
+}
+
+.food-img {
+    padding: 30px;
+    width: 50%;
+}
